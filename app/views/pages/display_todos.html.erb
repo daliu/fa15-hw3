@@ -1,0 +1,14 @@
+<h1>Here are our todos: </h1>
+<% Todo.select{|a| !a.finished}.each do |todo| %>
+		<%= todo.id %>
+  		<%= todo.tasks %>
+		<br/>
+<% end %>
+
+<br></br>
+
+<% Todo.select{|a| a.finished}.each do |todo| %>
+		<%= todo.id %>
+  		<%= todo.tasks %>
+		<br/>
+<% end %>

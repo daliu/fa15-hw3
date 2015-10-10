@@ -2,6 +2,11 @@ Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
+  root 'pages#home'
+  post '/cat', to: 'pages#cats'
+  post '/signup', to: 'pages#signup'
+  post '/todo', to: 'pages#display_todos'
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

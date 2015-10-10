@@ -1,0 +1,30 @@
+<h1>Hello There! Welcome to homework 3!</h1>
+<p>What a beautiful homepage!</p>
+
+<%= form_tag cat_path do %>
+  <%= label_tag :name, "Make Cats Here!" %>
+  <%= text_area_tag :name %><br></br>
+  <%= submit_tag "Make a Cat!" %>
+<% end %>
+
+<br></br>
+<br></br>
+
+<%= form_tag signup_path do %>
+  <%= label_tag :username, "Username" %>
+  <%= text_area_tag :username %><br></br>
+  <%= label_tag :email, "Email" %>
+  <%= text_area_tag :email %><br></br>
+  <%= label_tag :age, "Age" %>
+  <%= text_area_tag :age %><br></br>
+  <%= submit_tag "Sign Up!" %>
+<% end %>
+
+<br></br>
+<br></br>
+
+<%= form_tag todo_path do %>
+  <%= label_tag :task, "Task" %>
+  <%= text_area_tag :task %><br></br>
+  <%= submit_tag "Add a Task!" %>
+<% end %>
